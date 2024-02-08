@@ -1,0 +1,16 @@
+def buscador_de_lista (lista,valor):
+    if valor in lista:
+        return (lista.index(valor))
+    else:
+        i=0
+        while i<=len(lista)-1 and lista[i]<=valor:
+            i+=1
+        return i
+lista=[3,6,8,9]
+valor=4
+print (buscador_de_lista(lista,valor))
+
+
+            
+
+

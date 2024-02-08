@@ -1,0 +1,13 @@
+matriz = [["Mano tengo Fe", 44833, 788],["coquette", 56048, 428], ["donald trump", 2597, 100], ["cambien la semana de retiro", 89705, 1198], ["pelusa", 14708, 222]]
+
+porcentajes = []
+for fila in matriz:
+    visualizaciones = fila[1]
+    likes = fila[2]
+    porcentaje = (likes / visualizaciones) * 100
+    porcentajes.append(porcentaje)
+
+indice_max = porcentajes.index(max(porcentajes))
+tendencia_maxima = matriz[indice_max][0]
+
+print("La tendencia con la mayor tasa de éxito es:", tendencia_maxima)

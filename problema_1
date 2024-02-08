@@ -1,0 +1,39 @@
+coordenadas = [15,13,45, 7,5, 123,34,12, 13,35, 19, 18, 21, 17, 60]
+
+palabras = []
+for numero in coordenadas:
+    if numero % 3 == 0 and numero % 5 == 0:
+        palabras.append("FizzBuzz")
+    elif numero % 3 == 0:
+        palabras.append("Fizz")
+    elif numero % 5 == 0:
+        palabras.append("Buzz")
+    else:
+        palabras.append("Zzzz")
+
+X = 0
+Y = 0
+Z = 0
+direccion = True
+
+for palabra in palabras:
+    if palabra == "Fizz":
+        X += 1
+    elif palabra == "Buzz":
+        Y += 1
+    elif palabra == "FizzBuzz":
+        Z += 1
+    elif palabra == "Zzzz":
+        direccion = not direccion
+        if direccion:
+            X += 1
+            Y += 1
+            Z += 1
+        else:
+            X -= 1
+            Y -= 1
+            Z -= 1
+
+print("X:", X)
+print("Y:", Y)
+print("Z:", Z)
