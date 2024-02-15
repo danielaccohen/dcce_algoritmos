@@ -1,0 +1,25 @@
+class Vehicle:
+    def __init__(self, marca, color, placa, modelo):
+        self.marca = marca
+        self.color = color
+        self.placa = placa
+        self.modelo = modelo
+
+class Carro(Vehicle):
+    pass
+
+class Barco(Vehicle):
+    pass
+
+class Avion(Vehicle):
+    pass
+
+# Crear objetos de cada tipo de vehículo
+carro1 = Carro("Toyota", "Rojo", "ABC123", "Corolla")
+carro2 = Carro("Ford", "Azul", "DEF456", "Mustang")
+
+barco1 = Barco("Yamaha", "Blanco", "XYZ789", "Speedboat")
+barco2 = Barco("Sea-Doo", "Negro", "GHI012", "Jet Ski")
+
+avion1 = Avion("Boeing", "Blanco", "JKL345", "747")
+avion2 = Avion("Airbus", "Gris", "MNO678", "A380")
